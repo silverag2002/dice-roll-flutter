@@ -180,29 +180,12 @@
 // }
 
 import 'package:flutter/material.dart';
+import 'package:first_app/gradient_container.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(body: GradientContainer()),
     ),
   );
-}
-
-class GradientContainer extends StatelessWidget {
-  @override
-  Widget build(context) {
-    return (Container(
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-            colors: [Color(0xFF2E3192), Color(0xFF1BFFFF)],
-            begin: Alignment.bottomCenter,
-            end: Alignment.topRight),
-      ),
-      child: const Center(
-        child: Text("Ankit Gupta 123 ",
-            style: TextStyle(color: Colors.white, fontSize: 24)),
-      ),
-    ));
-  }
 }
