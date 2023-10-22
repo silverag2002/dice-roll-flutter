@@ -1,24 +1,18 @@
 import 'package:flutter/material.dart';
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer(color1, color2, {super.key})
-      : color1 = color1,
-        color2 = color2;
-
-  final Color color1;
-  final Color color2;
-
+  const GradientContainer({key}) : super(key: key);
   @override
   Widget build(context) {
     return (Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
-            colors: [color1, color2],
+            colors: [Color(0xFF2E3192), Color(0xFF1BFFFF)],
             begin: Alignment.bottomCenter,
             end: Alignment.topRight),
       ),
       child: const Center(
-        child: Text("Ankit Gupta ABCD ",
+        child: Text("Ankit Gupta 123 ",
             style: TextStyle(color: Colors.white, fontSize: 24)),
       ),
     ));
