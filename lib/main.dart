@@ -185,7 +185,8 @@ import 'package:first_app/gradient_container.dart';
 void main() {
   runApp(
     const MaterialApp(
-      home: Scaffold(body: GradientContainer()),
+      home: Scaffold(
+          body: GradientContainer(Color(0xFF2E3192), Color(0xFF1BFFFF))),
     ),
   );
 }
