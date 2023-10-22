@@ -19,9 +19,14 @@ class GradientContainer extends StatelessWidget {
         children: [
           Image.asset('assets/images/dice-3.png', width: 200),
           const SizedBox(
-              child: Text("ankit",
-                  style: TextStyle(backgroundColor: Colors.redAccent))),
-          TextButton(onPressed: onPress, child: const Text("Roll"))
+              child:
+                  Text("ankit", style: TextStyle(backgroundColor: Colors.red))),
+          TextButton(
+              onPressed: onPress,
+              style: TextButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.purpleAccent),
+              child: const Text("Roll"))
         ],
       )),
     ));
