@@ -34,8 +34,11 @@ class _ColumnWidgetState extends State<ColumnWidget> {
             onPressed: onPress,
             style: TextButton.styleFrom(
                 foregroundColor: Colors.white,
-                backgroundColor: Colors.purpleAccent),
-            child: const Text("Roll"))
+                backgroundColor: Colors.greenAccent),
+            child: const Text(
+              "Roll",
+              style: TextStyle(fontSize: 15, color: Colors.black),
+            ))
       ],
     );
   }
