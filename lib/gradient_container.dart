@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:first_app/column_stateful_widget.dart';
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({key}) : super(key: key);
@@ -13,22 +14,7 @@ class GradientContainer extends StatelessWidget {
             begin: Alignment.bottomCenter,
             end: Alignment.topRight),
       ),
-      child: Center(
-          child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Image.asset('assets/images/dice-3.png', width: 200),
-          const SizedBox(
-              child:
-                  Text("ankit", style: TextStyle(backgroundColor: Colors.red))),
-          TextButton(
-              onPressed: onPress,
-              style: TextButton.styleFrom(
-                  foregroundColor: Colors.white,
-                  backgroundColor: Colors.purpleAccent),
-              child: const Text("Roll"))
-        ],
-      )),
+      child: Center(child: ColumnWidget()),
     ));
   }
 }
